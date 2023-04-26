@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="CansatMapViewer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CansatMapViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="853*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btn_read"  Grid.Row="0" Content="Read"   Foreground="White" BorderBrush="Transparent" Background="#FFB10000" FontFamily="Segoe UI" Click="btn_read_Click"/>
+
+
+        <Maps:MapControl
+            x:Name="mapControl" 
+             MapServiceToken="u633J6SgU8a5Sm45dhJL~QQTOkCsf9OH6M8KGetSmzw~AjgLHxgCYR3_5-V9OdilyRTJNPjmmSGyiqPt1_U7Cf8OuLDh75Ra5zTqfPmsS91J" Grid.Row="1" 
+            />
+
+
+
+    </Grid>
+</Page>
